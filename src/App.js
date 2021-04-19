@@ -1,28 +1,27 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Footer from "../components/Footer"
-import NavBar from "../components/NavBar"
-import Home from "../pages/Home"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./components/Footer"
+import NavBar from "./components/NavBar"
+import Home from "./pages/Home"
 
 
 function App() {
   return (
 
-    <div>
-      <NavBar />
+      
     
     <Router>
        <div className="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            
-            <Route path={"Home"} component={Home} />
-            
+            <NavBar />
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path={"Home"} component={Home} />
+            </Switch>
+            <Footer />
         </div>
-
-        <Footer />
     </Router>
 
-    </div>
 
     
   );

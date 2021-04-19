@@ -1,5 +1,5 @@
 import React from "react"
-import {Link} from "react-router"
+import {Link} from "react-router-dom"
 
 
 function NavBar() {
@@ -11,7 +11,7 @@ function NavBar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-            <Link className="nav-link" to={"/web-dev.html"}>web dev</Link>
+                <Link className="nav-link" to={"/web-dev.html"}>web dev</Link>
                 <Link className="nav-link" to={"/portfolio.html"}>portfolio</Link>
                 <Link className="nav-link" to={"/contact.html"}>contact</Link>
                 

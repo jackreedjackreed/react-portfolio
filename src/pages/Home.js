@@ -1,6 +1,6 @@
 import React from 'react';
-import welcomePic from "../public/assets/images/IMG_5184 (1).jpeg"
-import selfPic from "../public/assets/images/bio-pic.png"
+import welcomePic from "../assets/images/IMG_5184 (1).jpeg"
+import selfPic from "../assets/images/bio-pic.png"
 
 function Home() {
     return (
